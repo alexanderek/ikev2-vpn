@@ -12,17 +12,17 @@ Fork from [`gaomd/ikev2-vpn-server`](https://hub.docker.com/r/gaomd/ikev2-vpn-se
     services:
 
       ikev2-vpn:
-      image: alexanderek/ikev2-vpn
-      container_name: ikev2-vpn
-      restart: always
-      ports:
-        - 500:500/udp
-        - 4500:4500/udp
-      cap_add:
-        - NET_ADMIN
-      environment:
-        - HOST=<FQDN or IP>
-        - HOSTNAME=ikev2-vpn-aws
+        image: alexanderek/ikev2-vpn
+        container_name: ikev2-vpn
+        restart: always
+        ports:
+          - 500:500/udp
+          - 4500:4500/udp
+        cap_add:
+          - NET_ADMIN
+        environment:
+          - HOST=<FQDN or IP>
+          - HOSTNAME=ikev2-vpn-aws
 
 
   *Be sure to replace "FQDN" in docker-compose.yml*
