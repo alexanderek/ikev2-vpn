@@ -6,7 +6,7 @@ Fork from [`gaomd/ikev2-vpn-server`](https://hub.docker.com/r/gaomd/ikev2-vpn-se
 
 ### 1. Start the IKEv2 VPN Server.
 
-    docker-compose up -d
+  *docker-compose.yml*
 
     version: '2'
     services:
@@ -26,6 +26,8 @@ Fork from [`gaomd/ikev2-vpn-server`](https://hub.docker.com/r/gaomd/ikev2-vpn-se
 
 
   *Be sure to replace "FQDN" in docker-compose.yml*
+
+    docker-compose up -d
 
 ### 2. Generate the .mobileconfig (for iOS / macOS) to the current path
 
